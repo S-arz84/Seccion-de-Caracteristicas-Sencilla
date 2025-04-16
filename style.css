@@ -78,6 +78,7 @@ img {
         display: grid;
         grid-template-rows: repeat(3, 1fr);
         padding: 20%;
+        gap: 7%;
     }
     #ideas {
         grid-column-start: 1;
@@ -96,6 +97,7 @@ img {
     #mega-contenedor {
         display: grid;
         grid-template-columns: repeat(3, 2fr);
+        gap: 7%;
     }
     #ideas {
         grid-column-start: 1;
