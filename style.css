@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(Background_image.svg);
+    background-color: #121826;
+    color: #E5E7EB;
+    font-family: "Outfit", sans-serif;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 2%;
+    flex-wrap: wrap;
+}
+#introduccion {
+    text-align: center;
+    color: #9DA3AE;
+    font-size: 1rem;
+    font-weight: 400;
+}
+#mega-contenedor {
+    display: flex;
+    flex-direction: column;
+    display: grid;
+}
+#ideas, #objetivos, #mensaje {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #212936;
+    margin: 10%;
+    padding: 5%;
+}
+#representacion-mano {
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #FCEED8;
+    padding: 5px;
+    margin: 0px 0px 10px;
+}
+#representacion-porteria {
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #DEE9FC;
+    padding: 5px;
+    margin: 0px 0px 10px;
+}
+#representacion-mensaje {
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #FBE5E6;
+    padding: 5px;
+    margin: 0px 0px 10px;
+}
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: inline-block;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.cuerpo {
+    color: #9DA3AE;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 5% 0;
+    flex-wrap: wrap;
+}
+img {
+    border-radius: 15px;
+    margin: 0;
+}
+@media (max-width: 640px) {
+    #mega-contenedor {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        padding: 20%;
+    }
+    #ideas {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    #objetivos {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    #mesaje {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+}
+@media (min-width: 641px) {
+    #mega-contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+    }
+    #ideas {
+        grid-column-start: 1;
+    }
+    #objetivos {
+        grid-column-start: 2;
+    }
+    #mensaje {
+        grid-column-start: 3;
+    }
+}
