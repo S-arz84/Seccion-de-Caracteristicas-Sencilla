@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url(Background_image.svg);
+    background-image: url(imagenes/Background_image.svg);
     background-color: #121826;
     color: #E5E7EB;
     font-family: "Outfit", sans-serif;
